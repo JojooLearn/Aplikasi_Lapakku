@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="primaryColor">#2E7D32</color>-->
+<!--    <color name="light_gray">#F5F5F5</color>-->
+<!--    <color name="blue">#0057D9</color>-->
+<!--    <color name="biruGelap">#6E93D2</color>-->
+
+        <!-- Biru -->
+        <color name="primary">#3F51B5</color>
+        <color name="primary_dark">#303F9F</color>
+        <color name="accent">#2196F3</color>
+        <color name="light_blue_bg">#E3F2FD</color>
+
+        <!-- Netral -->
+        <color name="white">#FFFFFF</color>
+        <color name="gray_surface">#F5F5F5</color>
+        <color name="text_dark">#212121</color>
+
+        <!-- Aksi -->
+        <color name="success">#4CAF50</color>
+        <color name="error">#F44336</color>
+        <!-- Dashboard -->
+        <color name="text_secondary">#6200EE</color>
+        <color name="divider">#1F000000</color>
+        <color name="primary_light">#D1C4E9</color>
+
+
+        <!-- Warna kartu -->
+        <color name="sales_card_bg">#E3F2FD</color>
+        <color name="sales_icon">#1976D2</color>
+        <color name="sales_text">#0D47A1</color>
+
+        <color name="profit_card_bg">#E8F5E9</color>
+        <color name="profit_icon">#388E3C</color>
+        <color name="profit_text">#1B5E20</color>
+
+        <color name="expense_color">#C62828</color>
+
+        <color name="card_stroke">#E0E0E0</color>
+
+
+</resources>

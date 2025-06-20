@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:strokeColor="@color/primary_light"
+    app:strokeWidth="1dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Nama Pelanggan -->
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- Nomor HP -->
+        <TextView
+            android:id="@+id/tvCustomerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08123456789"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <!-- Alamat -->
+        <TextView
+            android:id="@+id/tvCustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat lengkap pelanggan"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!-- Tombol Hapus -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_hapus"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Hapus pelanggan" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

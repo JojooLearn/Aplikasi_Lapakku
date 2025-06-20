@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pemrograman Frontend</string>
+    <string name="welcome_title">Selamat Datang di Lapaku</string>
+    <string name="welcome_subtitle">Kelola toko Anda dengan mudah dan efisien melalui aplikasi POS modern</string>
+    <string name="get_started">Mulai Sekarang</string>
+    <string name="app_version">Version 1.0 By @jojohandwytn_</string>
+    <string name="app_logo">Logo Aplikasi</string>
+
+    <string name="currency_format">Rp%s</string>
+    <string name="stock_format">%d item</string>
+</resources>

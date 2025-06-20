@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <!-- Header: Invoice -->
+    <TextView
+        android:id="@+id/tvInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoice: INV-XXXX"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Customer Name -->
+    <TextView
+        android:id="@+id/tvCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pelanggan: Nama"
+        android:textSize="14sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Tanggal -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal: yyyy-mm-dd"
+        android:textSize="14sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="12dp" />
+
+    <!-- List Item Penjualan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDetailItems"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Total Harga -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:gravity="end"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Cetak -->
+    <Button
+        android:id="@+id/btnCetak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cetak Invoice"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:strokeColor="@color/primary_light"
+    app:strokeWidth="1dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Nomor Invoice -->
+        <TextView
+            android:id="@+id/tvInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INV-20250601"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/text_dark"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- Nama Pelanggan -->
+        <TextView
+            android:id="@+id/tvCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelanggan: Johan"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <!-- Total & Tanggal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total: Rp150.000"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tanggal: 2025-06-01"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="@color/primary_light"
+    app:cardElevation="4dp"
+    app:strokeWidth="0.8dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Spinner Produk -->
+        <Spinner
+            android:id="@+id/spinnerProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_secondary"/>
+
+        <!-- Jumlah dan Harga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Qty"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="number"
+                android:backgroundTint="@color/divider"
+                android:textColor="@color/primary"
+                android:padding="8dp"
+                android:background="@drawable/edit_text_bg" />
+
+            <EditText
+                android:id="@+id/etHarga"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Harga"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="number"
+                android:backgroundTint="@color/divider"
+                android:padding="8dp"
+                android:background="@drawable/edit_text_bg" />
+
+            <ImageButton
+                android:id="@+id/btnHapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Hapus Item"
+                android:src="@drawable/icon_hapus" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

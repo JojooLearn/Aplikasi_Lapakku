@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/home"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/Produk"
+        android:icon="@drawable/ic_produk"
+        android:title="Produk"/>
+    <item
+        android:id="@+id/Riwayat"
+        android:icon="@drawable/kalender"
+        android:title="Riwayat"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+</menu>
